@@ -268,7 +268,8 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 408px;
-  min-height: 576px;
+  min-height: 584px;
+  padding: 72px 24px 24px;
   border-radius: 4px;
 
   background: #FCFCFC;
@@ -306,7 +307,8 @@ button {
 }
 
 .option-title {
-  margin-top: 72px;
+  display: block;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -316,15 +318,11 @@ button {
   color: var(--title-color);
 }
 
-.option-field {}
-
-.modal-option {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 360px;
+.option-field {
+  margin-bottom: 8px;
 }
+
+.modal-option {}
 
 .option-label {
   font-style: normal;
@@ -339,10 +337,10 @@ button {
   width: 100%;
   height: 40px;
   margin-top: 4px;
-  margin-bottom: 8px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .option-input:hover,
@@ -381,29 +379,44 @@ button {
 
 .icon-name {
   position: absolute;
-  top: 12px;
+  top: 50%;
   left: 19px;
-  width: 18px;
-  height: 24px;
+  transform: translateY(-40%);
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-name:hover {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-tel {
   position: absolute;
-  top: 12px;
+  top: 50%;
   left: 19px;
-  width: 18px;
-  height: 24px;
+  transform: translateY(-40%);
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-tel:hover {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-email {
   position: absolute;
-  top: 12px;
+  top: 50%;
   left: 19px;
-  width: 18px;
-  height: 24px;
+  transform: translateY(-40%);
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-email:hover {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .option-textarea::placeholder {
@@ -413,28 +426,30 @@ button {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  padding-top: 8px;
-  padding-left: 16px;
+  padding-top: 4px;
 }
 
 .option-textarea {
   width: 100%;
   height: 120px;
   margin-top: 4px;
-  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .option-textarea:hover,
 .option-textarea:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  outline: var(--accent-color);
 }
 
 .modal-field-zone {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   margin-top: 16px;
 }
 
@@ -481,6 +496,8 @@ button {
 }
 
 .modal-send-btn {
+  display: block;
+  margin: 0 auto;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -501,11 +518,7 @@ button {
   background-color: #404BBF;
 }
 
-.send-btn-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 24px;
-}
+.send-btn-container {}
 
 /* ----- about ----- */
 

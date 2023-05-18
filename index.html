@@ -460,10 +460,10 @@
     <div class="modal-container">
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <label class="option-title">
+            Leave your contacts and we will call you back
+          </label>
           <form class="modal-option">
-            <label class="option-title">
-              Leave your contacts and we will call you back
-            </label>
             <div class="modal-field-zone">
               <div class="option-field">
                 <label class="option-label" for="name">Name</label>
@@ -475,7 +475,7 @@
                     id="name"
                     placeholder=""
                   />
-                  <svg class="icon-name" width="12" height="12">
+                  <svg class="icon-name" width="20" height="24">
                     <use href="./images/icons.svg#icon-name"></use>
                   </svg>
                 </div>
@@ -490,22 +490,22 @@
                     id="tel"
                     placeholder=""
                   />
-                  <svg class="icon-tel" width="13" height="13">
+                  <svg class="icon-tel" width="14" height="20">
                     <use href="./images/icons.svg#icon-tel"></use>
                   </svg>
                 </div>
               </div>
               <div class="option-field">
-                <label class="option-label" for="email">Email</label>
+                <label class="option-label" for="mail">Email</label>
                 <div class="email-container">
                   <input
                     class="option-input"
                     type="email"
                     name="email"
-                    id="email"
+                    id="mail"
                     placeholder=""
                   />
-                  <svg class="icon-email" width="15" height="12">
+                  <svg class="icon-email" width="18" height="24">
                     <use href="./images/icons.svg#icon-email"></use>
                   </svg>
                 </div>
@@ -523,18 +523,22 @@
               </div>
             </div>
             <div class="modal-terms-container">
-              <svg class="privacy-checkbox" width="16" height="16">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
+              <label for="checkbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                />
+                <span class="checkbox-icon"></span>
+              </label>
               <p class="modal-terms-text">
                 I accept the terms and conditions of the
                 <a href="#" class="modal-privacy-link">Privacy Policy</a>
               </p>
             </div>
           </form>
-          <div class="send-btn-container">
-            <button type="submit" class="modal-send-btn">Send</button>
-          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
           <div class="close-button">
             <button data-modal-close type="button" class="modal-close">
               <svg class="modal-icon" width="8" height="8">
