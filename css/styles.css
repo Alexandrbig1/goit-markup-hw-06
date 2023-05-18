@@ -160,7 +160,6 @@ button {
   gap: 40px;
 }
 
-
 .head-address-items {
   margin-top: 0;
   transition: backgroundcolor 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -169,7 +168,6 @@ button {
 .head-address-items:nth-last-child() {
   margin-right: 0;
 }
-
 
 .head-contacts {
   font-weight: 400;
@@ -257,9 +255,9 @@ button {
 }
 
 .backdrop.is-hidden {
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden; */
+  visibility: hidden;
 }
 
 .modal {
@@ -875,6 +873,11 @@ button {
   gap: 16px;
 }
 
+.footer-submit-btn:hover,
+.footer-submit-btn:focus {
+  background-color: #404BBF;
+}
+
 .subscribe-icon {
   fill: currentColor;
   display: flex;
@@ -917,7 +920,6 @@ button {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   ;
-
 }
 
 .portfolio-btn:hover,
@@ -986,7 +988,6 @@ button {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .app-title {
