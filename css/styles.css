@@ -352,15 +352,18 @@ button {
   outline: var(--accent-color);
 }
 
-.option-input:hover+.icon-name {
+.option-input:hover+.icon-name,
+.option-input:focus+.icon-name {
   fill: var(--accent-color);
 }
 
-.option-input:hover+.icon-tel {
+.option-input:hover+.icon-tel,
+.option-input:focus+.icon-tel {
   fill: var(--accent-color);
 }
 
-.option-input:hover+.icon-email {
+.option-input:hover+.icon-email,
+.option-input:focus+.icon-email {
   fill: var(--accent-color);
 }
 
